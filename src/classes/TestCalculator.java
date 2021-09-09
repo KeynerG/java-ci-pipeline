@@ -1,4 +1,4 @@
-package Test;
+package classes;
 
 import classes.Calculator;
 
