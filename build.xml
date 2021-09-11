@@ -1,18 +1,18 @@
 <project name="Calculator" basedir="." default="main">
-    <property name="dir.src"     value="src"/>
-    <property name="dir.build"   value="build"/>
+    <property name="dir.src" value="src"/>
+    <property name="dir.build" value="build"/>
     <property name="dir.classes" value="${dir.build}/classes"/>
-    <property name="dir.jar"     value="${dir.build}/jar"/>
+    <property name="dir.jar" value="${dir.build}/jar"/>
 
-    <property name="main-class"  value="classes.Calculator"/>
+    <property name="main-class" value="classes.Calculator"/>
 
     <target name="clean">
         <delete dir="${dir.build}"/>
     </target>
 
     <target name="compile">
-        <mkdir dir="${dir.classes}"/>
-        <javac srcdir="${dir.src}" destdir="${dir.classes}"/>
+        <mkdir dir="${dir.build}"/>
+        <javac srcdir="${dir.src}" destdir="${dir.build}"/>
     </target>
 
     <target name="jar" depends="compile">
